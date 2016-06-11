@@ -22,8 +22,10 @@
     <allow-intent href="data:*" />
     <platform name="android">
         <allow-intent href="market:*" />
+		<icon src="icon.png" />
     </platform>
     <platform name="ios">
+		<icon src="icon.png" />
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
