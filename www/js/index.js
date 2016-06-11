@@ -38,7 +38,7 @@ var app = {
     receivedEvent: function(id) {
 		
 		if(id == 'deviceready'){
-			 
+			 alert('ok');
 			if(navigator.network.connection.type == Connection.NONE){
 
 				
@@ -54,7 +54,7 @@ var app = {
 			else{				
 		
 				// var url = 'http://webuser:PasseRC@kalys.pyxicom.com/pdflist.html';
-				var url = 'http://www.youtube.com';	
+				var url = 'https://www.youtube.com';
 				// var url = 'http://orionuser:PreProdPass@preprod.bkg.ma/app_mobile.html';	
 				// var url = 'https://www.bmcecapitalgestion.com/';	
 		
