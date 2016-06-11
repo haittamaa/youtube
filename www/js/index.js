@@ -38,7 +38,8 @@ var app = {
     receivedEvent: function(id) {
 		
 		if(id == 'deviceready'){
-			 alert('deviceready');
+			 alert('deviceready'+navigator);
+			 alert('deviceready'+navigator.network);
 			if(navigator.network.connection.type == Connection.NONE){
 
 				 alert('deviceready2');
