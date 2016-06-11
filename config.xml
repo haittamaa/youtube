@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.youtube.mobile" version="1.1.0">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.youtube.mobile.2" version="1.2.0">
   <name>Youtube Direct</name>
   <description>Youtube application</description>
   <author href="http://phonegap.com" email="h.aittamaa@gmail.com">Hassan AIT TAMAA</author>
