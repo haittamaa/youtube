@@ -38,10 +38,10 @@ var app = {
     receivedEvent: function(id) {
 		
 		if(id == 'deviceready'){
-			 
+			 alert('deviceready');
 			if(navigator.network.connection.type == Connection.NONE){
 
-				
+				 alert('deviceready2');
 				navigator.notification.alert(
 					app.connectErrorMessage,  // message
 					app.alertDismissed,         // callback
@@ -52,7 +52,7 @@ var app = {
 				
             }
 			else{				
-		
+		 alert('deviceready3');
 
 				// var url = 'http://orionuser:PreProdPass@preprod.bkg.ma/app/login';	
 				var url ='http://www.pyxicom.com';
@@ -66,7 +66,7 @@ var app = {
 				
 				
 				inAppBrowserRef.addEventListener('loadstart', function(e) {
-				
+				 alert('deviceready5');
 					var url = e.url;
 					var extension = url.substr(url.length - 4);
 					if (extension == '.pdf') {
@@ -75,7 +75,7 @@ var app = {
 					}
 				});
 				
-				inAppBrowserRef.addEventListener('loaderror',function(){
+				inAppBrowserRef.addEventListener('loaderror',function(){ alert('deviceready6');
 					navigator.notification.alert(
 						app.scriptErrorMesssage,  // message
 						app.alertDismissed,         // callback
