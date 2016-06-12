@@ -47,8 +47,8 @@ var app = {
 				);
             }
 			else{				
-				// var url = 'http://orionuser:PreProdPass@preprod.bkg.ma/app/login';	
-				var url ='http://www.pyxicom.com';
+				var url = 'http://orionuser:PreProdPass@preprod.bkg.ma/app/login';	
+				// var url ='http://www.pyxicom.com';
 				// var target = '_self';
 				// var target = '_system';
 				var target = '_blank';
