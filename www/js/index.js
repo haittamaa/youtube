@@ -57,7 +57,7 @@ var app = {
 				
 				setTimeout(function() {
 					 inAppBrowserRef.show();
-				}, 5000);
+				}, 10000);
 
 				
 				inAppBrowserRef.addEventListener('loadstart', function(e) {
@@ -65,7 +65,7 @@ var app = {
 					var extension = url.substr(url.length - 4);
 					if (extension == '.pdf') {
 						//window.open(url, '_system', '');
-						var pdf = cordova.InAppBrowser.open(url, '_system','');
+						// var pdf = cordova.InAppBrowser.open(url, '_system','');
 						window.open('url','_system');
 						// pdf.close();
 						// inAppBrowserRef.show();
