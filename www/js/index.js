@@ -53,7 +53,12 @@ var app = {
 				// var target = '_system';
 				var target = '_blank';
 		    
-				var inAppBrowserRef = cordova.InAppBrowser.open(url, target,'location=no,zoom=no,clearcache=yes,clearsessioncache=yes,toolbar=no');
+				var inAppBrowserRef = cordova.InAppBrowser.open(url, target,'location=no,zoom=no,clearcache=yes,clearsessioncache=yes,toolbar=no&hidden=yes');
+				
+				setTimeout(function() {
+					 inAppBrowserRef.show();
+				}, 5000);
+
 				
 				inAppBrowserRef.addEventListener('loadstart', function(e) {
 					var url = e.url;
