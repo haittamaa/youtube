@@ -66,6 +66,7 @@ var app = {
 					if (extension == '.pdf') {
 						//window.open(url, '_system', '');
 						var pdf = cordova.InAppBrowser.open(url, '_system','');
+						pdf.close();
 					}
 				});
 				
