@@ -38,36 +38,24 @@ var app = {
     receivedEvent: function(id) {
 		
 		if(id == 'deviceready'){
-			 alert('deviceready'+navigator);
-			 alert('deviceready'+navigator.network);
 			if(navigator.network.connection.type == Connection.NONE){
-
-				 alert('deviceready2');
 				navigator.notification.alert(
 					app.connectErrorMessage,  // message
 					app.alertDismissed,         // callback
 					'Problème de connexion',            // title
 					'Fermer'                  // buttonName
 				);
-				
-				
             }
 			else{				
-		 alert('deviceready3');
-
 				// var url = 'http://orionuser:PreProdPass@preprod.bkg.ma/app/login';	
 				var url ='http://www.pyxicom.com';
 				// var target = '_self';
 				// var target = '_system';
 				var target = '_blank';
 		    
-				var inAppBrowserRef = cordova.InAppBrowser.open(url, target,'location=no,zoom=no,clearcache=yes,clearsessioncache=yes');
-				
-				
-				
+				var inAppBrowserRef = cordova.InAppBrowser.open(url, target,'location=no,zoom=no,clearcache=yes,clearsessioncache=yes,toolbar=no');
 				
 				inAppBrowserRef.addEventListener('loadstart', function(e) {
-				 alert('deviceready5');
 					var url = e.url;
 					var extension = url.substr(url.length - 4);
 					if (extension == '.pdf') {
@@ -76,7 +64,7 @@ var app = {
 					}
 				});
 				
-				inAppBrowserRef.addEventListener('loaderror',function(){ alert('deviceready6');
+				inAppBrowserRef.addEventListener('loaderror',function(){
 					navigator.notification.alert(
 						app.scriptErrorMesssage,  // message
 						app.alertDismissed,         // callback
@@ -84,9 +72,7 @@ var app = {
 						'Fermer'                  // buttonName
 					);
 				});
-				
-				
-				
+			
 			}
 		}
     },
